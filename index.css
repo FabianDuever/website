@@ -1,0 +1,40 @@
+html,
+body {
+  height: 100%;
+}
+body {
+  display: grid;
+  place-items: center;
+  margin: 0;
+  background-image: url(./background.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+h2 {
+  font-family: 'Lato', sans-serif;
+  font-size: 4rem;
+
+  /* font-family: 'Josefin Sans', sans-serif;
+
+  font-family: 'Arvo', serif;
+
+  font-family: 'Acme', sans-serif;
+
+  font-family: 'Righteous', cursive;
+
+  font-family: 'Prompt', sans-serif;
+
+  font-family: 'Special Elite', cursive;
+
+  font-family: 'Audiowide', cursive;
+
+  font-family: 'Allerta Stencil', sans-serif;
+
+  font-family: 'Quantico', sans-serif; */
+}
