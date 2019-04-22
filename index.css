@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html,
 body {
   height: 100%;
@@ -6,19 +9,30 @@ body {
   --color: rgba(0, 0, 0, 0.2);
   margin: 0;
   font-family: 'Lato', sans-serif;
+  scroll-behavior: smooth;
+}
+body > section {
+  padding: 2rem;
 }
 section {
   height: 100vh;
   width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
+section > * {
+  max-width: 600px;
+}
 section#home {
+  display: grid;
   place-items: center;
   background: linear-gradient(var(--color), var(--color)), url(./background.jpg);
   background-position: center;
   background-size: cover;
-  display: grid;
   color: white;
+  background-attachment: fixed;
 }
 
 a {
@@ -36,6 +50,11 @@ h1 {
 }
 h2 {
   font-size: 4rem;
+}
+
+h3 {
+  font-size: 2.7rem;
+  margin: 1.5rem 0;
 }
 
 @media screen and (max-width: 600px) {
