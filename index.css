@@ -39,7 +39,6 @@ section#home {
 
 section#home .background-placeholder,
 section#home .background {
-  /* animation: 0.2s ease-in 0.4s 1 forwards fade; */
   transform: scale(1.1);
   z-index: -1;
   position: absolute;
@@ -62,7 +61,7 @@ section#home .background {
 
 section#home .background.loaded {
   opacity: 1;
-  transition: ease-in 4s;
+  transition: ease-in 2s;
 }
 
 a {
@@ -75,7 +74,7 @@ h2 {
 }
 
 h1 {
-  font-family: 'Arvo', serif;
+  font-family: 'Arvo', sans-serif;
   font-size: 5.5rem;
 }
 h2 {

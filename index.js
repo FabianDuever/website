@@ -11,7 +11,8 @@ const onDidLoad = () => {
 window.requestIdleCallback(() => {
   $background.style.display = 'initial'
   if ($background.complete) {
-    onDidLoad()
+    requestAnimationFrame(onDidLoad)
+  } else {
+    $background.addEventListener('load', onDidLoad)
   }
-  $background.addEventListener('load', onDidLoad)
 })
