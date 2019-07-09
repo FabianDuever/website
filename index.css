@@ -32,11 +32,37 @@ section > * {
 section#home {
   display: grid;
   place-items: center;
-  background: linear-gradient(var(--color), var(--color)), url(./background.jpg);
-  background-position: center;
-  background-size: cover;
+  position: relative;
   color: white;
-  background-attachment: fixed;
+  overflow: hidden;
+}
+
+section#home .background-placeholder,
+section#home .background {
+  /* animation: 0.2s ease-in 0.4s 1 forwards fade; */
+  transform: scale(1.1);
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+section#home .background-placeholder {
+  filter: blur(5px) brightness(80%);
+}
+section#home .background {
+  filter: brightness(80%);
+  opacity: 0;
+}
+
+section#home .background.loaded {
+  opacity: 1;
+  transition: ease-in 4s;
 }
 
 a {
