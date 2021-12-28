@@ -1,0 +1,7 @@
+tasks:
+  - init: npm i -g http-server
+    command: http-server .
+# Ports to expose on workspace startup
+ports:
+  - port: 8000
+    onOpen: open-preview
