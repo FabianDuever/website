@@ -3,5 +3,5 @@ tasks:
     command: http-server .
 # Ports to expose on workspace startup
 ports:
-  - port: 8000
+  - port: 8080
     onOpen: open-preview
